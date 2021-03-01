@@ -27,6 +27,7 @@ public class DoraMouse : MonoBehaviour
     private bool isInSwitchCooldown = false;
     float armx = .36f;
     float army = -.4f;
+    float keys = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -120,7 +121,20 @@ public class DoraMouse : MonoBehaviour
         }
 
     }
-    
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag.Equals("Key")){
+            Debug.Log("collected key");
+            Destroy(col.gameObject);
+            keys++;
+        }
+        if (col.gameObject.tag.Equals("door")){
+            if(keys == 5)
+            {
+                SceneManager.LoadScene("SwiperBattle");
+            }
+        }
+    }
     #region quicksand code
     
     void OnTriggerEnter2D(Collider2D col)
@@ -131,6 +145,7 @@ public class DoraMouse : MonoBehaviour
             velocity = 1f;
             Debug.Log(velocity);
         }
+        
     }
     
     void OnTriggerExit2D(Collider2D col)

@@ -12,6 +12,8 @@ TagManager:
   - Wall
   - SwiperBullet
   - swiper
+  - Key
+  - door
   layers:
   - Default
   - TransparentFX
@@ -28,8 +30,8 @@ TagManager:
   - Bullet2Layer
   - Bullet3Layer
   - MonkeyLayer
-  - 
-  - 
+  - WaterLayer
+  - KeyLayer
   - 
   - 
   - 
