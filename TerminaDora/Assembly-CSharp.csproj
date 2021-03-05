@@ -63,6 +63,7 @@
      <Compile Include="Assets\GameOverScript.cs" />
      <Compile Include="Assets\HeartSystem.cs" />
      <Compile Include="Assets\MouseCursorChange.cs" />
+     <Compile Include="Assets\RestartButton.cs" />
      <Compile Include="Assets\SwiperStuff.cs" />
      <Compile Include="Assets\lava layer\lava.cs" />
      <Compile Include="Assets\quicksand\quicksand.cs" />

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class GameOverScript : MonoBehaviour
 {
@@ -21,6 +23,6 @@ public class GameOverScript : MonoBehaviour
     }
 
     public static void endGame(){
-    	displayText.text = "GAME OVER";
+    	SceneManager.LoadScene("DoraLose");
     }
 }

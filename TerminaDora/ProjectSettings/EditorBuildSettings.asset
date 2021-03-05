@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SwiperBattle.unity
     guid: 327a38548f14f314ea5c40351f1abfd5
+  - enabled: 1
+    path: Assets/Scenes/DoraWins.unity
+    guid: 2e2ba333bb028c14ab58440577ee4b2c
+  - enabled: 1
+    path: Assets/Scenes/DoraLose.unity
+    guid: 30126c029d2d59c40b791656c678a59c
   m_configObjects: {}

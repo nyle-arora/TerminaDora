@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class SwiperStuff : MonoBehaviour
 {
@@ -35,6 +37,7 @@ public class SwiperStuff : MonoBehaviour
         if(health < 1)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene("DoraWins");
         }
         //rotate to face dora
         Quaternion rotation = Quaternion.LookRotation
@@ -83,7 +86,7 @@ public class SwiperStuff : MonoBehaviour
                 }
                 
 
-                Invoke("ResetCooldown", 1.5f);
+                Invoke("ResetCooldown", 2f);
                 isInCooldown = true;
             }
             if(weaponchoice ==1)
@@ -94,7 +97,7 @@ public class SwiperStuff : MonoBehaviour
                 instBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Cos(angle*0.01745f)*pspeed, Mathf.Sin(angle*0.01745f)*pspeed);
                 Physics2D.IgnoreCollision(instBullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
                 Destroy(instBullet, 3f);
-                Invoke("ResetCooldown", .4f);
+                Invoke("ResetCooldown", .7f);
                 isInCooldown = true;
             }
 

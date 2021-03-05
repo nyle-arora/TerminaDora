@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5245731307605031170}
   - component: {fileID: 1261039899194286583}
   - component: {fileID: 5429005740804008692}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: SwiperBullet1
   m_TagString: SwiperBullet
   m_Icon: {fileID: 0}

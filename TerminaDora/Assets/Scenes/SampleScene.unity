@@ -5450,6 +5450,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueberryDone (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3019617108628818939, guid: 95f3c84ae29bbb34d95db656b21f5d40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 3019617108628818940, guid: 95f3c84ae29bbb34d95db656b21f5d40,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11235,6 +11240,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueberryDone (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3019617108628818939, guid: 95f3c84ae29bbb34d95db656b21f5d40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 3019617108628818940, guid: 95f3c84ae29bbb34d95db656b21f5d40,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11764,7 +11774,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -17504,6 +17514,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BlueberryDone (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3019617108628818939, guid: 95f3c84ae29bbb34d95db656b21f5d40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3019617108628818940, guid: 95f3c84ae29bbb34d95db656b21f5d40,
         type: 3}
@@ -40060,6 +40075,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueberryDone (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3019617108628818939, guid: 95f3c84ae29bbb34d95db656b21f5d40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 3019617108628818940, guid: 95f3c84ae29bbb34d95db656b21f5d40,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -48561,6 +48581,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueberryDone (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3019617108628818939, guid: 95f3c84ae29bbb34d95db656b21f5d40,
+        type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 3019617108628818940, guid: 95f3c84ae29bbb34d95db656b21f5d40,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -48680,6 +48705,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3903175025998565442, guid: ee8f03ddb840a0b4ea933fbf232c200a,
+        type: 3}
+      propertyPath: rrpgsprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 22466b8243c885649bcb018ce3ccf7ca,
+        type: 3}
     - target: {fileID: 3903175025998565444, guid: ee8f03ddb840a0b4ea933fbf232c200a,
         type: 3}
       propertyPath: hearts.Array.data[0]

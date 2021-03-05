@@ -9,7 +9,7 @@ public class DoraMouse : MonoBehaviour
     float pspeed1 = 10f;
     float pspeed2 = 20f;
     float pspeed3 = 30f;
-    float switcher = 0f;
+    float switcher = 1f;
     float offset = 270f;
     float bulletcooldown = .3f;
     float switchcooldown = .25f;
@@ -23,6 +23,7 @@ public class DoraMouse : MonoBehaviour
     public Sprite gunsprite;
     public Sprite bowsprite;
     public Sprite rpgsprite;
+    public Sprite rrpgsprite;
     private bool isInCooldown = false;
     private bool isInSwitchCooldown = false;
     float armx = .36f;
@@ -38,6 +39,7 @@ public class DoraMouse : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        
         var direction = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
         var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
@@ -99,6 +101,7 @@ public class DoraMouse : MonoBehaviour
             }
             
         }
+        
         if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             rb.velocity = new Vector2(-velocity, rb.velocity.y);    
@@ -115,11 +118,18 @@ public class DoraMouse : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, -velocity);    
         }
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.Escape))
         {
             Reset();
         }
-
+        if(isInCooldown && switcher % 3 == 0)
+        {
+            sr.sprite = rrpgsprite;
+        }
+        if(!isInCooldown && switcher % 3 == 0)
+        {
+            sr.sprite = rpgsprite;
+        }
     }
     void OnCollisionEnter2D(Collision2D col)
     {
