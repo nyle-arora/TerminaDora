@@ -18,7 +18,6 @@ public class HeartSystem : MonoBehaviour
     {
     	if (life <= 0){
             GameOverScript.endGame();
-            Time.timeScale = 0; 
         }
 
         float xOffset = 0.0f;
