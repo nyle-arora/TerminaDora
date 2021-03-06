@@ -16,17 +16,17 @@ public class HeartSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    	if (life <= 0){
+        if (life <= 0){
             GameOverScript.endGame();
         }
 
         float xOffset = 0.0f;
         for (int i = 0; i < hearts.Count; i++){
-        	Vector3 temp = hearts[i].transform.position;
-        	temp.y = transform.position.y + 4.31f; 
-        	temp.x = transform.position.x + 4.8f + xOffset; 
-        	hearts[i].transform.position = temp;
-        	xOffset = xOffset + 0.7f;
+            Vector3 temp = hearts[i].transform.position;
+            temp.y = transform.position.y + 6.5f; 
+            temp.x = transform.position.x + 6.8f + xOffset; 
+            hearts[i].transform.position = temp;
+            xOffset = xOffset + 0.7f;
         }
     }
 
@@ -76,7 +76,7 @@ public class HeartSystem : MonoBehaviour
                 canbehurtbylava = false;
         }
         }
-    	
+        
     }
     private void ResetCooldown () {
         canbehurtbylava = true;
