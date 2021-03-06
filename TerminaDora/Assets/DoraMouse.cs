@@ -29,11 +29,18 @@ public class DoraMouse : MonoBehaviour
     float armx = .36f;
     float army = -.4f;
     public static float keys = 0f;
+
+    AudioSource AS;
+    public AudioClip glocc;
+    public AudioClip cross;
+    public AudioClip missile;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        AS = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -49,6 +56,23 @@ public class DoraMouse : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) || Input.GetMouseButton(0))
         { //0.01745 is the degree to radian conversion constant. also transform.position should be something else to make it shoot from gun
             if(!isInCooldown){
+                switch(switcher % 3)
+                {
+                    case 1:
+                        AS.PlayOneShot(glocc, .7F);
+                        break;
+                    case 2:
+                        AS.PlayOneShot(cross, 1F);
+                        break;
+                    case 0:
+                        AS.PlayOneShot(missile, .7F);
+                        break;
+                    default:
+                        //this should not ever happen
+                        Debug.Log("ERROR");
+                        break;
+
+                }
                 GameObject instBullet = Instantiate(bullet, 
                                                     new Vector2 (transform.position.x + armx * Mathf.Cos(angle * 0.01745f) + army * Mathf.Cos(angle * 0.01745f - 90*0.01745f), 
                                                                  transform.position.y + armx * Mathf.Sin(angle * 0.01745f) + army * Mathf.Sin(angle * 0.01745f - 90*0.01745f)), 
@@ -178,7 +202,7 @@ public class DoraMouse : MonoBehaviour
 
     private void Reset()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("TitleScreen");
     }
 }
 

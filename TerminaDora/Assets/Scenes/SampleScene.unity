@@ -5990,11 +5990,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -6451,8 +6451,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -400, y: 300}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -330, y: 260}
+  m_SizeDelta: {x: 251.74829, y: 130.6897}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &247326852
 MonoBehaviour:
@@ -6486,12 +6486,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
+    m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
+    m_FontSize: 48
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 40
+    m_MaxSize: 48
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -8185,8 +8185,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 450, y: 300}
-  m_SizeDelta: {x: 200, y: 20}
+  m_AnchoredPosition: {x: 405.63, y: 268.8}
+  m_SizeDelta: {x: 212.7428, y: 82.453125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &345950749
 MonoBehaviour:
@@ -8208,8 +8208,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
+    m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
+    m_FontSize: 32
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -12105,7 +12105,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cf9e0746977834fc0a3dc20568d27de9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.323
+  m_Volume: 0.237
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -49188,6 +49188,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 22466b8243c885649bcb018ce3ccf7ca,
         type: 3}
+    - target: {fileID: 3903175025998565442, guid: ee8f03ddb840a0b4ea933fbf232c200a,
+        type: 3}
+      propertyPath: glocc
+      value: 
+      objectReference: {fileID: 8300000, guid: 383de173ed6904e4982ba9fd4d040e64, type: 3}
+    - target: {fileID: 3903175025998565442, guid: ee8f03ddb840a0b4ea933fbf232c200a,
+        type: 3}
+      propertyPath: cross
+      value: 
+      objectReference: {fileID: 8300000, guid: 0f708d0c26f16d047b37101bb8684603, type: 3}
+    - target: {fileID: 3903175025998565442, guid: ee8f03ddb840a0b4ea933fbf232c200a,
+        type: 3}
+      propertyPath: missile
+      value: 
+      objectReference: {fileID: 8300000, guid: 5929ae78ad1794847b7493d4ef8d9bc2, type: 3}
     - target: {fileID: 3903175025998565444, guid: ee8f03ddb840a0b4ea933fbf232c200a,
         type: 3}
       propertyPath: hearts.Array.data[0]

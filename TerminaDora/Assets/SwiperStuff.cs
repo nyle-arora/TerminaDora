@@ -24,11 +24,16 @@ public class SwiperStuff : MonoBehaviour
     private bool isInCooldown = false;
     float health = 50f;
     float angle=0;
+
+    AudioSource AS;
+    public AudioClip mg;
+    public AudioClip sg;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        AS = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -73,6 +78,7 @@ public class SwiperStuff : MonoBehaviour
             //shoot
             if(weaponchoice ==0)
             {
+                AS.PlayOneShot(sg, 1F);
                 for(int i = 0; i <6; i++)
                 {
                     GameObject instBullet = Instantiate(bullet, 
@@ -91,6 +97,7 @@ public class SwiperStuff : MonoBehaviour
             }
             if(weaponchoice ==1)
             {
+                AS.PlayOneShot(mg, 1F);
                 GameObject instBullet = Instantiate(bullet, 
                                                     transform.position,
                                                     Quaternion.AngleAxis(0, Vector3.forward));

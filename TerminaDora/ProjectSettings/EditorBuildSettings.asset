@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 786263e5dfea4044ba91757adf5cf835
+  - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: 863111acaf10ec1458ccfe7c7790b3b9
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -18,9 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/DoraLose.unity
     guid: 30126c029d2d59c40b791656c678a59c
   - enabled: 1
-    path: Assets/Scenes/Instructions.unity
-    guid: 863111acaf10ec1458ccfe7c7790b3b9
-  - enabled: 1
-    path: Assets/Scenes/TitleScreen.unity
-    guid: 786263e5dfea4044ba91757adf5cf835
+    path: Assets/Scenes/DoraLoseSwiper.unity
+    guid: 9b95f2d46bb9e8b469558387a1d531ba
   m_configObjects: {}

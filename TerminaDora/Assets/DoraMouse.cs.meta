@@ -12,6 +12,13 @@ MonoImporter:
       type: 3}
   - bullet3: {fileID: 8476024281698475998, guid: d210eab503727b644a44675ebb13d61d,
       type: 3}
+  - gunsprite: {instanceID: 0}
+  - bowsprite: {instanceID: 0}
+  - rpgsprite: {instanceID: 0}
+  - rrpgsprite: {instanceID: 0}
+  - glocc: {fileID: 8300000, guid: 383de173ed6904e4982ba9fd4d040e64, type: 3}
+  - cross: {fileID: 8300000, guid: 3a0cda4024b09c14388510631edc3976, type: 3}
+  - missile: {fileID: 8300000, guid: 5929ae78ad1794847b7493d4ef8d9bc2, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
