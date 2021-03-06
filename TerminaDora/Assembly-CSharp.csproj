@@ -69,6 +69,7 @@
      <Compile Include="Assets\MouseCursorChange.cs" />
      <Compile Include="Assets\RestartButton.cs" />
      <Compile Include="Assets\SwiperStuff.cs" />
+     <Compile Include="Assets\Timer.cs" />
      <Compile Include="Assets\lava layer\lava.cs" />
      <Compile Include="Assets\quicksand\quicksand.cs" />
  <Reference Include="Unity.Timeline.Editor">
