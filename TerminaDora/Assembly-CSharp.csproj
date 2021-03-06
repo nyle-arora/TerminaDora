@@ -62,6 +62,7 @@
      <Compile Include="Assets\EnemyStuff\monkey.cs" />
      <Compile Include="Assets\GameOverScript.cs" />
      <Compile Include="Assets\HeartSystem.cs" />
+     <Compile Include="Assets\KeyTextScript.cs" />
      <Compile Include="Assets\MouseCursorChange.cs" />
      <Compile Include="Assets\RestartButton.cs" />
      <Compile Include="Assets\SwiperStuff.cs" />
