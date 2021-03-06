@@ -29,8 +29,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/HeartSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DoraMouse.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/TerminaDora-main/TerminaDora/Assets/DoraMouse.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Timer.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -38,6 +40,7 @@
         <option value="$PROJECT_DIR$/Assets/lava.cs" />
         <option value="$PROJECT_DIR$/Assets/DoraMouse.cs" />
         <option value="$PROJECT_DIR$/Assets/KeyTextScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Timer.cs" />
       </list>
     </option>
   </component>
@@ -85,6 +88,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="189" key="Rider.ProjectTemplateDialog.Size" timestamp="1615066778104">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="189" key="Rider.ProjectTemplateDialog.Size/0.0.1440.900@0.0.1440.900" timestamp="1615066778104" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
