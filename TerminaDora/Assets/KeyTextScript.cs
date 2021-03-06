@@ -6,32 +6,42 @@ using UnityEngine.UI;
 public class KeyTextScript : MonoBehaviour
 {
 
-	public static int keyCount = 0; 
-	Text kText; 
-	Vector3 doraPosn; 
+	private static int keyCount = 0; 
+	Text keyText; 
+	
+
     // Start is called before the first frame update
     void Start()
     {
-        kText = GetComponent<Text>();
-        doraPosn = GameObject.FindGameObjectsWithTag("Player")[0].transform.position; 
+        keyText = GetComponent<Text>();
+		keyText.text = "0 of 5 keys found";
+
     }
 
     // Update is called once per frame
     void Update()
     {
-    	//TRY #1
-        // Vector3 temp = transform.position; 
-        // temp.x = doraPosn.x + 7.4f; 
-        // temp.y = doraPosn.y + 5.5f;
-        // transform.position = temp; 
-        //Debug.Log(transform.position);
 
-    	//TRY #2
-        // transform.position = new Vector3(doraPosn.x + 7.4f, doraPosn.y + 5.5f, 0);
+		
+		if (DoraMouse.keys == 1) {
+			keyText.text = "1 of 5 keys found";
+		}
 
-        // Vector3 newPosn = new Vector3(doraPosn.x + 7.4f, doraPosn.y + 5.5f);
-        // Vector3 ourPosn = Camera.main.WorldToScreenPoint(newPosn);
-        // transform.position = ourPosn; 
-        kText.text = "howdy";
+		if (DoraMouse.keys == 2) {
+			keyText.text = "2 of 5 keys found";
+		}
+
+		if (DoraMouse.keys == 3) {
+			keyText.text = "3 of 5 keys found";
+		}
+
+		if (DoraMouse.keys == 4) {
+			keyText.text = "4 of 5 keys found";
+		}
+
+		if (DoraMouse.keys == 5) {
+			keyText.text = "ALL KEYS FOUND!";
+		}
+
     }
 }

@@ -28,7 +28,7 @@ public class DoraMouse : MonoBehaviour
     private bool isInSwitchCooldown = false;
     float armx = .36f;
     float army = -.4f;
-    float keys = 0f;
+    public static float keys = 0f;
     // Start is called before the first frame update
     void Start()
     {

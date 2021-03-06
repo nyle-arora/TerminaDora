@@ -29,16 +29,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/lava.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Desktop/TerminaDora-main/TerminaDora/Assets/DoraMouse.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Desktop/TerminaDora-main/TerminaDora/Assets/player.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DoraMouse.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/TerminaDora-main/TerminaDora/Assets/DoraMouse.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/lava.cs" />
         <option value="$PROJECT_DIR$/Assets/DoraMouse.cs" />
+        <option value="$PROJECT_DIR$/Assets/KeyTextScript.cs" />
       </list>
     </option>
   </component>
@@ -63,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1613116651555</updated>
       <workItem from="1613116654682" duration="438000" />
+      <workItem from="1615061798080" duration="1313000" />
     </task>
     <servers />
   </component>
@@ -81,8 +81,28 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$USER_HOME$/Desktop/TerminaDora-main/TerminaDora/Assets/DoraMouse.cs</url>
+          <line>71</line>
+          <properties documentPath="$USER_HOME$/Desktop/TerminaDora-main/TerminaDora/Assets/DoraMouse.cs" initialLine="71">
+            <startOffsets>
+              <option value="2989" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3010" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
