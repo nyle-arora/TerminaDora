@@ -1417,6 +1417,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6157880116078519271, guid: d74f7388a929a724fa2ace7b50409161,
         type: 3}
+      propertyPath: squares.Array.size
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6157880116078519271, guid: d74f7388a929a724fa2ace7b50409161,
+        type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 448919125}

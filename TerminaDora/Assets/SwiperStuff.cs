@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class SwiperStuff : MonoBehaviour
 {
+    List<GameObject> squares = new List<GameObject>();
+
     public Transform target;
     float pspeed = 7f;
     float pspeed1 = 7f;
@@ -33,6 +35,12 @@ public class SwiperStuff : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         AS = GetComponent<AudioSource>();
+        for (int i = 0; i < 50; i++){
+            GameObject hp = Instantiate(bullet, new Vector2(transform.position.x+0.1f * (i - 26), 
+                                        transform.position.y + 3f), 
+                                        Quaternion.AngleAxis(0, Vector3.forward));
+            squares.Add(hp);
+        }
     }
 
     // Update is called once per frame
@@ -114,16 +122,52 @@ public class SwiperStuff : MonoBehaviour
         if (c.gameObject.tag.Equals("Bullet1")){
             Destroy(c.gameObject);
             health -= 1f;
+            if(health <= 0)
+            {
+                SceneManager.LoadScene("DoraWins");
+            }
+            for (int i = 0; i < 1; i++){
+                if(squares.Count <= 0)
+                {   SceneManager.LoadScene("DoraWins");
+                    break;}
+                GameObject sq = squares[squares.Count-1].gameObject;
+                squares.RemoveAt(squares.Count-1);
+                Destroy(sq);
+            }
         }
         else if (c.gameObject.tag.Equals("Bullet2"))
         {
             Destroy(c.gameObject);
             health -= 5f;
+            if(health <= 0)
+            {
+                SceneManager.LoadScene("DoraWins");
+            }
+            for (int i = 0; i < 5; i++){
+                if(squares.Count <= 0)
+                {   SceneManager.LoadScene("DoraWins");
+                    break;}
+                GameObject sq = squares[squares.Count-1].gameObject;
+                squares.RemoveAt(squares.Count-1);
+                Destroy(sq);
+            }
         }
         else if (c.gameObject.tag.Equals("Bullet3"))
         {
             Destroy(c.gameObject);
-            health -= 12f;
+            health -= 1f;
+            if(health <= 0)
+            {
+                SceneManager.LoadScene("DoraWins");
+            }
+            for (int i = 0; i < 12; i++){
+                if(squares.Count <= 0)
+                {   SceneManager.LoadScene("DoraWins");
+                    break;}
+                GameObject sq = squares[squares.Count-1].gameObject;
+                squares.RemoveAt(squares.Count-1);
+                Destroy(sq);
+            }
         }
         else
         {
@@ -135,5 +179,9 @@ public class SwiperStuff : MonoBehaviour
     }
     private void ResetSwitchCooldown () {
         isInSwitchCooldown = false;
+    }
+
+    void healthBar(){
+
     }
 }
