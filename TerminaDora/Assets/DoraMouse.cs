@@ -158,7 +158,6 @@ public class DoraMouse : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag.Equals("Key")){
-            Debug.Log("collected key");
             Destroy(col.gameObject);
             keys++;
         }
@@ -175,9 +174,7 @@ public class DoraMouse : MonoBehaviour
     {
         if (col.gameObject.GetComponent<quicksand>())
         {
-            Debug.Log("hitting");
             velocity = 1f;
-            Debug.Log(velocity);
         }
         
     }
@@ -186,9 +183,7 @@ public class DoraMouse : MonoBehaviour
     {
         if (col.gameObject.GetComponent<quicksand>())
         {
-            Debug.Log("hitting");
             velocity = 5f;
-            Debug.Log(velocity);
         }
     }
     

@@ -16,7 +16,6 @@ public class Timer : MonoBehaviour
         time = 181;
         timer = GetComponent<Text>();
         timer.text = "3:00";
-        Debug.Log("3 minutes");
     }
 
     // Update is called once per frame

@@ -37,6 +37,7 @@ public class HeartSystem : MonoBehaviour
         }
         if (c.gameObject.tag.Equals("SwiperBullet")){
             Destroy(c.gameObject);
+            Debug.Log("here");
             EnemyDamage();
         }
         if (c.gameObject.tag.Equals("swiper")){
