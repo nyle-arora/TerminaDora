@@ -14,7 +14,6 @@ public class SwiperStuff : MonoBehaviour
     public GameObject bullet1;
     public GameObject bullet2;
     float switchcooldown = 1f;
-    float velocity = 5f;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     int weaponchoice = 0;
@@ -92,7 +91,7 @@ public class SwiperStuff : MonoBehaviour
                 }
                 
 
-                Invoke("ResetCooldown", 2f);
+                Invoke("ResetCooldown", 1.6f);
                 isInCooldown = true;
             }
             if(weaponchoice ==1)
@@ -104,7 +103,7 @@ public class SwiperStuff : MonoBehaviour
                 instBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Cos(angle*0.01745f)*pspeed, Mathf.Sin(angle*0.01745f)*pspeed);
                 Physics2D.IgnoreCollision(instBullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
                 Destroy(instBullet, 3f);
-                Invoke("ResetCooldown", .7f);
+                Invoke("ResetCooldown", .6f);
                 isInCooldown = true;
             }
 
@@ -124,7 +123,7 @@ public class SwiperStuff : MonoBehaviour
         else if (c.gameObject.tag.Equals("Bullet3"))
         {
             Destroy(c.gameObject);
-            health -= 15f;
+            health -= 12f;
         }
         else
         {

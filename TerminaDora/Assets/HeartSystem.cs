@@ -72,7 +72,7 @@ public class HeartSystem : MonoBehaviour
             hearts.RemoveAt(life-1);
             Destroy(h);
             life = life - 1; 
-            Invoke("ResetCooldown", 1f);
+            Invoke("ResetCooldown", .45f);
                 canbehurtbylava = false;
         }
         }

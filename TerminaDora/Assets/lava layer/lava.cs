@@ -33,17 +33,20 @@ public class lava : MonoBehaviour
 
         
     }
-
+/*
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.GetComponent<DoraMouse>())
         {
 			col.GetComponent<HeartSystem>().LavaDamage();
-            // inLava = true;
-			// Debug.Log(inLava);
-   //          Debug.Log("hitting");
-            // velocity = 1f;
-            // Debug.Log(velocity);
+        }
+    }
+*/
+    void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.gameObject.GetComponent<DoraMouse>())
+        {
+			col.GetComponent<HeartSystem>().LavaDamage();
         }
     }
     
@@ -52,12 +55,6 @@ public class lava : MonoBehaviour
         if (col.gameObject.GetComponent<DoraMouse>())
         {
 			inLava = false;
-			time = 11;
-			Debug.Log(inLava);
-			Debug.Log(time);
-            // Debug.Log("hitting");
-            // velocity = 5f;
-            // Debug.Log(velocity);
         }
     }
 }
