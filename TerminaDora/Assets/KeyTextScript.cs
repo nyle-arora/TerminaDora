@@ -22,7 +22,9 @@ public class KeyTextScript : MonoBehaviour
     void Update()
     {
 
-		
+		if (DoraMouse.keys == 0){
+			keyText.text = "0 of 5 keys found";
+		}
 		if (DoraMouse.keys == 1) {
 			keyText.text = "1 of 5 keys found";
 		}

@@ -56,7 +56,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\ButtonScripts\GameExitScript.cs" />
-     <Compile Include="Assets\ButtonScripts\GameOverScript.cs" />
      <Compile Include="Assets\ButtonScripts\GameStartScript.cs" />
      <Compile Include="Assets\ButtonScripts\Instructions.cs" />
      <Compile Include="Assets\ButtonScripts\RestartButton.cs" />
@@ -67,6 +66,7 @@
      <Compile Include="Assets\EnemyStuff\cloud.cs" />
      <Compile Include="Assets\EnemyStuff\monkey.cs" />
      <Compile Include="Assets\Fonts\Script\scriptTexttest.cs" />
+     <Compile Include="Assets\GameOverScript.cs" />
      <Compile Include="Assets\HeartSystem.cs" />
      <Compile Include="Assets\KeyTextScript.cs" />
      <Compile Include="Assets\MouseCursorChange.cs" />
