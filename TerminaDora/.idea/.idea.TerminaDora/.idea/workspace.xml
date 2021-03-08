@@ -29,10 +29,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/HeartSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/HeartSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DoraMouse.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/TerminaDora-main/TerminaDora/Assets/DoraMouse.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Timer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Timer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -41,6 +41,7 @@
         <option value="$PROJECT_DIR$/Assets/DoraMouse.cs" />
         <option value="$PROJECT_DIR$/Assets/KeyTextScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Timer.cs" />
+        <option value="$PROJECT_DIR$/Assets/SwiperStuff.cs" />
       </list>
     </option>
   </component>
@@ -66,6 +67,7 @@
       <updated>1613116651555</updated>
       <workItem from="1613116654682" duration="438000" />
       <workItem from="1615061798080" duration="1419000" />
+      <workItem from="1615193587078" duration="204000" />
     </task>
     <servers />
   </component>
