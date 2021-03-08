@@ -68,6 +68,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  bullet: {fileID: 0}
+  bullet1: {fileID: 0}
+  bullet2: {fileID: 0}
+  shotgunsprite: {fileID: 0}
+  mgsprite: {fileID: 0}
+  hs: {fileID: 0}
+  mg: {fileID: 0}
+  sg: {fileID: 0}
 --- !u!61 &4758880647140876056
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -85,7 +93,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.78}
+    oldSize: {x: 1.63, y: 1.31}
     newSize: {x: 1, y: 0.78}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -133,7 +141,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7b7167c7185f34f21a7b7588caef2423, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f5970f6d87774e209d5d0fb85d75d55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

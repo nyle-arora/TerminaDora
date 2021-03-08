@@ -67,14 +67,14 @@ public class SwiperStuff : MonoBehaviour
                 bullet = bullet1; 
                 pspeed = pspeed1; 
                 sr.sprite = shotgunsprite;
-                sr.color = Color.blue;
+                //sr.color = Color.blue;
             }
             else
             {
                 bullet = bullet2; 
                 pspeed = pspeed2;
                 sr.sprite = mgsprite;
-                sr.color = Color.red;
+                //sr.color = Color.red;
             }
             Invoke("ResetSwitchCooldown", switchcooldown);
                 isInSwitchCooldown = true;
