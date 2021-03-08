@@ -25,6 +25,7 @@ public class SwiperStuff : MonoBehaviour
     private bool isInCooldown = false;
     float health = 50f;
     float angle=0;
+    public GameObject hs; 
 
     AudioSource AS;
     public AudioClip mg;
@@ -36,7 +37,7 @@ public class SwiperStuff : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         AS = GetComponent<AudioSource>();
         for (int i = 0; i < 50; i++){
-            GameObject hp = Instantiate(bullet, new Vector2(transform.position.x+0.1f * (i - 26), 
+            GameObject hp = Instantiate(hs, new Vector2(transform.position.x+0.1f * (i - 26), 
                                         transform.position.y + 3f), 
                                         Quaternion.AngleAxis(0, Vector3.forward));
             squares.Add(hp);

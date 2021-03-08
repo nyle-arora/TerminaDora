@@ -14,7 +14,7 @@ public class HeartSystem : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (life <= 0){
             GameOverScript.endGame();
