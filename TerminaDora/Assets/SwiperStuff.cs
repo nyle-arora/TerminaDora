@@ -125,6 +125,7 @@ public class SwiperStuff : MonoBehaviour
             health -= 1f;
             if(health <= 0)
             {
+                DoraMouse.keys = 0;
                 SceneManager.LoadScene("DoraWins");
             }
             for (int i = 0; i < 1; i++){
@@ -142,11 +143,13 @@ public class SwiperStuff : MonoBehaviour
             health -= 5f;
             if(health <= 0)
             {
+                DoraMouse.keys = 0;
                 SceneManager.LoadScene("DoraWins");
             }
             for (int i = 0; i < 5; i++){
                 if(squares.Count <= 0)
-                {   SceneManager.LoadScene("DoraWins");
+                {   DoraMouse.keys = 0;
+                    SceneManager.LoadScene("DoraWins");
                     break;}
                 GameObject sq = squares[squares.Count-1].gameObject;
                 squares.RemoveAt(squares.Count-1);
