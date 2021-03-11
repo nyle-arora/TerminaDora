@@ -35,6 +35,8 @@ public class DoraMouse : MonoBehaviour
     public AudioClip cross;
     public AudioClip missile;
 
+    private bool isColliding;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,10 +48,17 @@ public class DoraMouse : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        Debug.Log(rb.velocity);
         
         var direction = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
         var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+
+        // if (isColliding == false)
+        // {
+            transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+        // }
+       
+        
         rb.velocity = new Vector2(0, 0);
         float iy = Input.GetAxis("Vertical");
         float ix = Input.GetAxis("Horizontal");
@@ -73,6 +82,7 @@ public class DoraMouse : MonoBehaviour
                         break;
 
                 }
+                
                 GameObject instBullet = Instantiate(bullet, 
                                                     new Vector2 (transform.position.x + armx * Mathf.Cos(angle * 0.01745f) + army * Mathf.Cos(angle * 0.01745f - 90*0.01745f), 
                                                                  transform.position.y + armx * Mathf.Sin(angle * 0.01745f) + army * Mathf.Sin(angle * 0.01745f - 90*0.01745f)), 
@@ -154,6 +164,8 @@ public class DoraMouse : MonoBehaviour
         {
             sr.sprite = rpgsprite;
         }
+        
+        
     }
     void OnCollisionEnter2D(Collision2D col)
     {
@@ -166,6 +178,33 @@ public class DoraMouse : MonoBehaviour
             {
                 SceneManager.LoadScene("SwiperBattle");
             }
+        }
+        
+        if (col.gameObject.tag == "water")
+        {
+            isColliding = true;
+        }
+
+    }
+
+    void OnCollisionStay2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "water")
+        {
+            rb.velocity = new Vector2(0, 0);
+            isColliding = true;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "water")
+        {
+            isColliding = false;
+            rb.velocity = new Vector2(0, 0);
+            // rb.velocity = Vector3.zero;
+            // transform.rotation = Quaternion.AngleAxis(0,Vector3.zero);
+            Debug.Log(rb.velocity);
         }
     }
     #region quicksand code
@@ -199,5 +238,13 @@ public class DoraMouse : MonoBehaviour
     {
         SceneManager.LoadScene("TitleScreen");
     }
+    
+    // private void OnCollisionEnter2D(Collision2D wall) 
+    // {
+    //     if (wall.tag == "water") 
+    //     {
+    //         rb.velocity = Vector3.zero;
+    //     }
+    // }
 }
 

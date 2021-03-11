@@ -38,10 +38,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/lava.cs" />
-        <option value="$PROJECT_DIR$/Assets/DoraMouse.cs" />
         <option value="$PROJECT_DIR$/Assets/KeyTextScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/SwiperStuff.cs" />
+        <option value="$PROJECT_DIR$/Assets/DoraMouse.cs" />
       </list>
     </option>
   </component>
@@ -68,6 +68,7 @@
       <workItem from="1613116654682" duration="438000" />
       <workItem from="1615061798080" duration="1419000" />
       <workItem from="1615193587078" duration="204000" />
+      <workItem from="1615423746168" duration="5172000" />
     </task>
     <servers />
   </component>
