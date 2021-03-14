@@ -24,7 +24,10 @@ public class GameOverScript : MonoBehaviour
 
     public static void endGame(){
         if(SceneManager.GetActiveScene().name == "SwiperBattle")
-        {SceneManager.LoadScene("DoraLoseSwiper");}
+        {
+            DoraMouse.keys = 0;
+            SceneManager.LoadScene("DoraLoseSwiper");
+        }
         else
     	{
             DoraMouse.keys = 0; 
